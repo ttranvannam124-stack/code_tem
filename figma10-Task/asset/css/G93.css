@@ -177,9 +177,33 @@
   width: 139px;
   height: 3px;
   border: none;
-  background-color: red;
   margin: 0 9px 0 12px;
 }
+.Collection_button hr:nth-of-type(1) {
+  background: linear-gradient(
+    to right,
+    var(--school) 0%,
+    var(--school) 32%,
+    rgba(39, 38, 51, 1) 32%
+  );
+}
+#hr_c_b {
+  background: linear-gradient(
+    to right,
+    var(--personal) 0%,
+    var(--personal) 32%,
+    rgba(39, 38, 51, 1) 32%
+  );
+}
+#hr2_c_b {
+  background: linear-gradient(
+    to right,
+    var(--design-stick) 0%,
+    var(--design-stick) 32%,
+    rgba(39, 38, 51, 1) 32%
+  );
+}
+
 .box_color_1 {
   background-color: var(--school);
 }
