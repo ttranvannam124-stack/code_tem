@@ -1,0 +1,197 @@
+#G93 {
+  width: 1035px;
+  height: 512px;
+  position: relative;
+}
+#Task_management_card {
+  width: 848px;
+  height: 366px;
+  background-color: var(--back-button3);
+
+  border-radius: 10px 10px 0 0;
+  margin-left: 121px;
+  display: flex;
+}
+#site_bar {
+  width: 192px;
+  height: 131px;
+  margin-top: 18px;
+}
+#site_bar .Flex_row_a_center {
+  height: 18px;
+  width: 144px;
+  margin-left: 16px;
+  gap: 20px;
+}
+#site_bar div:nth-last-of-type(1) img {
+  margin-left: 15px;
+}
+
+#site_bar div img:nth-of-type(1) {
+  height: 9px;
+  width: 9px;
+}
+#site_bar div img:nth-of-type(2) {
+  height: 11px;
+  width: 13px;
+}
+#site_bar #loi37 {
+  margin: 15px 16px;
+}
+#site_bar .R14 {
+  height: 39px;
+  width: 192px;
+}
+#site_bar .R14:hover {
+  background-color: var(--back-button4);
+}
+#site_bar .R14:hover .h2_12 {
+  color: var(--text-school);
+}
+.R14:nth-last-of-type(2) div {
+  height: 13px;
+  width: 13px;
+  background-color: var(--personal);
+  border-radius: 3px;
+}
+.R14 div {
+  height: 13px;
+  width: 13px;
+  background-color: var(--school);
+  border-radius: 3px;
+}
+/* G92 */
+#G92 {
+  width: 641px;
+  height: 338px;
+  margin-top: 28px;
+  background-color: var(--back-button1);
+}
+#G92 #in_G92 {
+  margin: 25px 0 15px 0;
+}
+#G92 div button {
+  margin: 0px 8px 0 140px;
+}
+#G92 div #school_in_G92 {
+  margin-right: 281px;
+}
+#dod {
+  margin-right: 76px;
+}
+#sort img {
+  margin-left: 340px;
+  margin-right: 8px;
+}
+#sort {
+  margin-bottom: 6px;
+}
+.card_stick {
+  height: 30px;
+  width: 362px;
+  background-color: var(--back-button2);
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+.card_stick input {
+  width: 14;
+  height: 14;
+  border-radius: 5px;
+  border-width: 1.5px;
+  margin-left: 14px;
+  margin-right: 32px;
+  accent-color: var(--back-button2);
+  position: relative;
+  cursor: pointer;
+}
+.card_stick input:checked:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--design-stick);
+  background: transparent;
+  border-radius: 4px;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}
+.card_stick img {
+  margin-left: 14px;
+  margin-right: 32px;
+}
+.p_10_w .p_10 {
+  color: rgba(198, 199, 202, 1);
+}
+#card_stick_bottom {
+  height: 245px;
+  width: 167px;
+  margin-left: 53px;
+}
+#card_stick_bottom img {
+  background-color: aliceblue;
+  margin-top: 8px;
+}
+/* card tmc */
+#Card_TMC {
+  width: 216px;
+  height: 335px;
+  position: absolute;
+  top: 156px;
+  right: 767px;
+  background-color: var(--back-button1);
+  border-radius: 16px;
+}
+
+#Collections_3dod {
+  margin: 26px 0 0 25px;
+}
+#Collections_3dod p,
+#Collections_3dod img {
+  margin-top: 26px;
+}
+#Collections_3dod p {
+  margin-right: 65px;
+}
+.Collection_button {
+  height: 78px;
+  width: 188px;
+  background-color: var(--back-button2);
+  margin-left: 15px;
+  border-radius: 16px;
+  margin-top: 7px;
+}
+.first_item_in_c {
+  margin-top: 20px;
+}
+.box_color {
+  height: 32px;
+  width: 33px;
+  border-radius: 12px;
+  margin: 12px 10px 0px 12px;
+}
+.Collection_button h1 {
+  margin-top: 13px;
+}
+.Collection_button hr {
+  width: 139px;
+  height: 3px;
+  border: none;
+  background-color: red;
+  margin: 0 9px 0 12px;
+}
+.box_color_1 {
+  background-color: var(--school);
+}
+.box_color_2 {
+  background-color: var(--personal);
+}
+.box_color_3 {
+  background-color: var(--design-stick);
+}
+.Collection_button p {
+  color: rgba(133, 139, 147, 1);
+}
+.hr_p_C_b {
+  margin-top: 13px;
+}
