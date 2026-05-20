@@ -1,0 +1,146 @@
+#header {
+  height: auto;
+  padding-top: 40px;
+  background-color: rgba(19, 21, 23, 1);
+}
+.nav-head {
+  width: 1143px;
+  max-width: calc(100% - 128px);
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  height: 40px;
+}
+nav {
+  display: flex;
+  margin-top: 10px;
+  gap: 20px;
+}
+nav a {
+  color: rgba(133, 139, 147, 1);
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+nav a.active {
+  color: rgba(249, 249, 249, 1);
+  position: relative;
+}
+nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70%; /* Độ dài đường gạch (ngắn hơn chiều ngang của chữ) */
+  height: 4px; /* Độ dày của đường gạch */
+  background-color: #4caf50; /* Màu xanh lá cây */
+  border-radius: 2px; /* Bo tròn nhẹ hai đầu đường gạch */
+}
+.nav-head button {
+  width: 110px;
+  height: 40px;
+  border: 1px solid #272633;
+  border-radius: 8px;
+}
+.bo-head {
+  width: calc(100% -150px);
+  min-height: 390px;
+  display: flex;
+  justify-self: center;
+  justify-content: space-between;
+  gap:20px;
+  margin-top: 90px;
+}
+.bo-head img {
+  width: 12%;
+  height: 80%;
+  align-self: start;
+}
+.highlight-box {
+  position: relative;
+    width: auto;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  padding: 0 4px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.03); /* Nền hộp hơi sáng nhẹ */
+}
+
+/* Định dạng chung cho các chấm tròn ở góc */
+.dot {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+}
+
+/* Vị trí và màu sắc chính xác cho từng góc */
+.dot-tl {
+  top: -9px;
+  left: -9px;
+  background-color: rgba(174, 143, 249, 1);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+} /* Tím */
+.dot-tr {
+  top: -9px;
+  right: -9px;
+  background-color: rgba(239, 143, 0, 1);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+} /* Cam */
+.dot-bl {
+  bottom: -9px;
+  left: -9px;
+  background-color: rgba(255, 118, 103, 1);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+} /* Đỏ hồng */
+.dot-br {
+  bottom: -9px;
+  right: -9px;
+  background-color: rgba(12, 206, 132, 1);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+} /* Xanh ngọc */
+h1 {
+  position: relative;
+}
+.ever {
+  position: relative;
+}
+.dot-end {
+  bottom: 10px;
+  right: 0;
+  width: 7px;
+  height: 7px;
+  background-color: rgba(255, 118, 103, 1);
+  border-radius: 50%;
+}
+.text_button-head {
+  align-self: flex-end;
+  width: 783px;
+  text-align: center;
+}
+.p-head {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: rgba(133, 139, 147, 1);
+  width: 447px;
+  justify-self: center;
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+
