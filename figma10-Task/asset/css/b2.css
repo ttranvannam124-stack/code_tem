@@ -1,0 +1,286 @@
+#body2 {
+  height: auto;
+  background-color: rgba(19, 21, 23, 1);
+  padding-bottom: 140px;
+}
+.content-B2 {
+  width: 82%;
+  max-width: 1165px;
+  justify-self: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#body2 h2 {
+  max-width: 368px;
+}
+.content-B2 span {
+  color: rgb(138, 172, 45);
+}
+.left-cB2 {
+  width: 537px;
+  height: auto;
+}
+.row1-lcB2 p {
+  text-align: start;
+  max-width: 537px;
+  margin-top: 20px;
+  margin-bottom: 86px;
+}
+.row2-lcB2 {
+  width: 430px;
+  height: 161px;
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+.box-rlcB2 {
+  width: 132px;
+  height: 127px;
+  background-color: rgba(39, 38, 51, 1);
+  padding-top: 10px;
+  border-radius: 9px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.circle {
+  width: 28px;
+  display: flex;
+  gap: 5px;
+  margin-left: 38%;
+}
+.circle div {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(39, 38, 51, 1);
+}
+.c-active {
+  background: linear-gradient(
+    191.94deg,
+    #c4f566 -43.72%,
+    #ae8ef9 -5.87%,
+    #ef8f00 52.36%,
+    #61e559 122.78%
+  );
+}
+.box-rlcB2:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    191.94deg,
+    #c4f566 -43.72%,
+    #ae8ef9 -5.87%,
+    #ef8f00 52.36%,
+    #61e559 122.78%
+  );
+  animation: float 0.5s ease-in-out 1 forwards;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+.box-rlcB2:hover p {
+  color: #fff;
+}
+
+/*  */
+.right-cB2{
+    width: 560px;
+  height: 525px;
+}
+.container {
+  position: relative;
+  width: 560px;
+  height: 525px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ĐỦ 6 KHỐI HÌNH CHỮ NHẬT MỜ PHÍA SAU NỀN */
+.bg-rects {
+  position: absolute;
+  width: 561px;
+  height: 525px;
+  z-index: 0;
+}
+.bg-rect {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  background-color: rgba(25, 27, 29, 1);
+  top: 50%;
+  left: 50%;
+}
+/* Phân bổ so le 6 ô bao quanh tâm góc 15 độ giống ảnh */
+.br-1 {
+  transform: translate(-160%, -130%) rotate(11.59deg);
+}
+.br-2 {
+  transform: translate(-20%, -130%) rotate(11.59deg);
+}
+.br-3 {
+  transform: translate(100%, -80%) rotate(11.59deg);
+}
+.br-4 {
+  transform: translate(-190%, -20%) rotate(11.59deg);
+}
+.br-5 {
+  transform: translate(-60%, -10%) rotate(11.59deg);
+}
+.br-6 {
+  transform: translate(70%, 30%) rotate(11.59deg);
+}
+
+/* 2 VÒNG TRÒN NÉT ĐỨT QUỸ ĐẠO (ĐỨNG YÊN) */
+.orbit-dashed-outer {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border: 1.5px dashed rgba(47, 47, 47, 1);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+.orbit-dashed-inner {
+  position: absolute;
+  width: 366px;
+  height: 366px;
+  border: 1.5px dashed rgba(47, 47, 47, 1);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* TÂM TRÒN 2 LỚP XANH LÁ */
+.center-circle-outer {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background-color: #2d963f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.center-circle-inner {
+  width: 135px;
+  height: 135px;
+  background-color: #56e256;
+  border-radius: 50%;
+}
+
+/* --- CSS CHO CÁC THẺ (CARDS) --- */
+.card {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+}
+
+/* Giao diện khối hộp chữ nhật của thẻ */
+.card-body {
+  width: 255px;
+  height: 61px;
+  background-color: #17181c;
+  border-radius: 12px;
+  padding: 14px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    background-color 0.2s;
+}
+
+.card-body:hover {
+  border-color: rgba(86, 226, 86, 0.4);
+  background-color: #1d1e24;
+}
+
+/* Chữ bên trong thẻ */
+.c.text-gradient {
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Màu chữ chính xác từng thẻ theo ảnh mẫu */
+.c-exercitation .text-gradient {
+  background: linear-gradient(89.93deg, #0CCE84 3.45%, #AE8EF9 99.07%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.c-online .text-gradient{
+  background: linear-gradient(89.86deg, #EF8F00 -6.27%, #FF7667 90.08%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0%;
+  text-align: center;
+
+}
+.c-design .text-gradient{
+  background: linear-gradient(92.64deg, #C4F566 -11.2%, #FF6E6E 123.12%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.c-dtask .text-gradient{
+  background: linear-gradient(92.64deg, #C4F566 -11.2%, #FF6E6E 123.12%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* Vòng tròn chứa icon bên phải */
+.icon-circle {
+  width: 36px;
+  height: 36px;
+  background-color: #212329;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Cấu trúc thẻ D'task */
+.dtask-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.avatar-group {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  object-fit: cover;
+}
+
+.avatar:nth-child(2) {
+  margin-left: -12px;
+  background-color: #888;
+}
