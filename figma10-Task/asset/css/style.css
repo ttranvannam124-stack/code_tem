@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -20,31 +19,41 @@ h1 {
   color: rgba(249, 249, 249, 1);
 }
 h2 {
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 20px;
-  line-height: 24px;
+  font-family: Sora;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
   letter-spacing: 0%;
+  color: rgba(249, 249, 249, 1);
 }
-h4{
-font-weight: 600;
-font-size: 22px;
-line-height: 32px;
-letter-spacing: 0%;
-color: rgba(249, 249, 249, 1);
+h3 {
+  font-family: Sora;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(249, 249, 249, 1);
 }
-p{
-font-weight: 400;
-font-size: 16px;
-line-height: 26px;
-letter-spacing: 0%;
-text-align: center;
-color: rgba(133, 139, 147, 1);
+h4 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: rgba(249, 249, 249, 1);
 }
-button:hover{
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(133, 139, 147, 1);
+}
+button:hover {
   cursor: pointer;
 }
-.button{
+.button {
   width: 199px;
   height: 54px;
   border-radius: 8px;
@@ -78,7 +87,7 @@ button:hover{
   align-content: space-between;
   flex-direction: column;
 }
-.text-gradient{
+.text-gradient {
   background: linear-gradient(to right, #eca610c4, #bbec1a, #24e143);
   -webkit-background-clip: text;
   background-clip: text;
@@ -89,7 +98,7 @@ button:hover{
   letter-spacing: 0%;
   text-align: center;
 }
-.icon{
+.icon {
   width: 62px;
   height: 62px;
   border-radius: 50%;
@@ -99,13 +108,14 @@ button:hover{
   align-items: center;
   margin-bottom: 20px;
 }
-.img-icon{
+.img-icon {
   width: 30px;
   height: 30px;
 }
-.line { /* Bằng 1/2 chiều cao của icon để vào chính giữa */
+.line {
+  /* Bằng 1/2 chiều cao của icon để vào chính giữa */
   position: relative;
-  width: 195px;  /* Kéo dài sang icon tiếp theo */
+  width: 195px; /* Kéo dài sang icon tiếp theo */
   top: 64px;
   flex: 1;
   height: 0px;
@@ -113,217 +123,4 @@ button:hover{
   margin-right: -3%;
   flex-grow: 1;
   border-top: 1px dashed #4b5563; /* Đường chấm mờ */
-} 
-
-/* Tổng quan khu vực chính */
-.dashboard-section {
-  display: flex;
-  background-color: #131417; /* Màu nền xám đen */
-  padding: 60px 80px;
-  font-family: 'Inter', sans-serif;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  overflow: hidden;
 }
-
-/* --- BÊN TRÁI: TEXT & STATS --- */
-.stats-content {
-  flex: 1;
-  max-width: 520px;
-}
-
-.stats-content .title {
-  color: #ffffff;
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 0 0 20px 0;
-}
-
-.stats-content .description {
-  color: #6b7280; /* Màu chữ xám mờ */
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 40px;
-}
-
-/* Hàng chứa 3 thẻ số liệu */
-.cards-grid {
-  display: flex;
-  align-items: flex-end;
-  gap: 16px;
-}
-
-.stat-card {
-  width: 120px;
-  border-radius: 16px;
-  padding: 24px 16px;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-/* Thẻ xám tiêu chuẩn */
-.standard-card {
-  background-color: #1e2025;
-  color: #ffffff;
-  height: 120px;
-}
-
-.standard-card h3 {
-  font-size: 26px;
-  margin: 0 0 8px 0;
-}
-
-.standard-card p {
-  color: #6b7280;
-  font-size: 12px;
-  margin: 0;
-}
-
-/* Thẻ Gradient ở giữa (Cao hơn) */
-.gradient-card {
-  background: linear-gradient(135deg, #ec4899, #f59e0b, #10b981);
-  color: #ffffff;
-  height: 150px; /* Thẻ giữa nhô cao lên */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-}
-
-.gradient-card .dots {
-  position: absolute;
-  top: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: rgba(255, 255, 255, 0.6);
-  letter-spacing: 2px;
-}
-
-.gradient-card h3 {
-  font-size: 32px;
-  margin: 0;
-}
-
-.gradient-card p {
-  font-size: 12px;
-  margin: 4px 0 0 0;
-}
-
-
-/* --- BÊN PHẢI: HỆ SINH THÁI VÒNG TRÒN --- */
-.galaxy-container {
-  flex: 1;
-  position: relative;
-  width: 500px;
-  height: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Tâm phát sáng màu xanh lá */
-.glow-center {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  background-color: rgba(34, 197, 94, 0.2); /* Vòng nhạt ngoài */
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-}
-
-.glow-core {
-  width: 95px;
-  height: 95px;
-  background-color: #22c55e; /* Tâm xanh neon đậm */
-  border-radius: 50%;
-  box-shadow: 0 0 40px rgba(34, 197, 94, 0.6);
-}
-
-/* Đường quỹ đạo hình Elip dẹt bao quanh tâm */
-.orbit {
-  position: absolute;
-  border: 1px dashed rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transform: rotate(-15deg); /* Xoay nghiêng nhẹ góc phối cảnh */
-}
-
-.orbit-inner {
-  width: 290px;
-  height: 240px;
-}
-
-.orbit-outer {
-  width: 440px;
-  height: 360px;
-}
-
-/* Định dạng chung cho các Thẻ Tag */
-.badge-tag {
-  position: absolute;
-  background-color: rgba(26, 27, 31, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 8px 14px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 13px;
-  color: #9ca3af;
-  z-index: 10;
-}
-
-/* Tọa độ và phong cách riêng từng Tag */
-.tag-online-support {
-  top: 15%;
-  left: 10%;
-}
-.text-orange { color: #f97316; }
-
-.tag-exercitation {
-  top: 15%;
-  right: 15%;
-}
-
-.tag-dtask {
-  bottom: 30%;
-  left: 5%;
-  color: #ffffff;
-}
-
-.tag-design {
-  bottom: 15%;
-  right: 15%;
-}
-
-/* Các Icon định dạng nhỏ bên trong Tag */
-.icon-arrow, .icon-user {
-  width: 24px;
-  height: 24px;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10px;
-}
-
-.arrow-orange { background-color: rgba(249, 115, 22, 0.15); color: #f97316; }
-.arrow-pink { background-color: rgba(236, 72, 153, 0.15); color: #ec4899; }
-.icon-user { background-color: rgba(168, 85, 247, 0.15); color: #a855f7; }
-
-.icon-play {
-  width: 22px;
-  height: 22px;
-  background-color: #eab308;
-  color: #000;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 9px;
-}
-

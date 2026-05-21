@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./asset/css/a1.css" />
     <link rel="stylesheet" href="./asset/css/a2.css" />
     <link rel="stylesheet" href="./asset/css/b1.css" />
+    <link rel="stylesheet" href="./asset/css/b2.css" />
     <link rel="stylesheet" href="asset\css\card.css" />
     <link rel="stylesheet" href="asset\css\G93.css" />
     <link rel="stylesheet" href="asset\css\style_nam.css" />
@@ -186,11 +187,163 @@
       </div>
     <!-- thêm code vô đây -->
     </div>
+    <div id="body2" class="form-page">
+      <div class="content-B2">
+        <div class="left-cB2">
+          <div class="row1-lcB2">
+            <h2>Okay, <span>Let's</span> see D'task in numbers</h2>
+            <p>
+              Powering a productive team means using a powerful tool (and plenty
+              of snacks). From meetings and projects to events and goal setting,
+              D'taak intuitive features give any team the ability to quickly set
+              up and customize workflows for just about anything
+            </p>
+          </div>
+          <div class="circle">
+            <div class="c"></div>
+            <div class="c c-active"></div>
+            <div class="c"></div>
+          </div>
+          <div class="row2-lcB2">
+            <div class="box-rlcB2">
+              <h3>12PM</h3>
+              <p>Support</p>
+            </div>
+            <div class="box-rlcB2">
+              <h3>16</h3>
+              <p>Active <br />user</p>
+            </div>
+            <div class="box-rlcB2">
+              <h3>7/24</h3>
+              <p>Languages</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-cB2" id="orbitContainer">
+          <div class="container">
+            <!-- Đủ 6 khối hộp chữ nhật mờ ẩn sau nền -->
+            <div class="bg-rects">
+              <div class="bg-rect br-1"></div>
+              <div class="bg-rect br-2"></div>
+              <div class="bg-rect br-3"></div>
+              <div class="bg-rect br-4"></div>
+              <div class="bg-rect br-5"></div>
+              <div class="bg-rect br-6"></div>
+            </div>
+
+            <!-- 2 Vòng nét đứt quỹ đạo đứng yên -->
+            <div class="orbit-dashed-outer"></div>
+            <div class="orbit-dashed-inner"></div>
+
+            <!-- Tâm tròn xanh 2 lớp đứng yên -->
+            <div class="center-circle-outer">
+              <div class="center-circle-inner"></div>
+            </div>
+
+            <!-- --- DANH SÁCH 4 THẺ --- -->
+            <!-- Thẻ 1: Exercitation -->
+            <div class="card c-exercitation" data-angle="35">
+              <div class="card-body">
+                <span class="text-gradient">Exercitation</span>
+                <div class="icon-circle">
+                  <img src="./asset/image/send.svg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Thẻ 2: Online Support -->
+            <div class="card c-online" data-angle="145">
+              <div class="card-body">
+                <span class="text-gradient">Online Support</span>
+                <div class="icon-circle">
+                  <img src="./asset/image/play.svg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Thẻ 3: D'task -->
+            <div class="card c-dtask" data-angle="215">
+              <div class="card-body">
+                <div class="dtask-left">
+                  <div class="icon-circle">
+                    <img src="./asset/image/play.svg" alt="" />
+                  </div>
+                  <span class="text-gradient">D'task</span>
+                </div>
+                <div class="avatar-group">
+                  <img
+                    class="avatar"
+                    src="./asset/image/user1.svg"
+                    alt="user"
+                  />
+                  <img
+                    class="avatar"
+                    src="./asset/image/user2.svg"
+                    alt="user"
+                  />
+                </div>
+              </div>
+            </div>
     <!-- <div> hoặc vô đây
 
     </div> -->
     
     
 
+            <!-- Thẻ 4: Design -->
+            <div class="card c-design" data-angle="325">
+              <div class="card-body">
+                <span class="text-gradient">Design</span>
+                <div class="icon-circle">
+                  <img src="./asset/image/humen.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TỐI ƯU TOÁN HỌC TRỰC TIẾP TRÊN GPU ĐỂ XOAY MƯỢT TUYỆT ĐỐI -->
+          <script>
+            const container = document.getElementById("orbitContainer");
+            const cards = document.querySelectorAll(".card");
+
+            const radius = 240; // Bán kính quỹ đạo ngoại vi ngoài cùng
+            const speed = 0.2; // Tốc độ di chuyển mượt mà ổn định
+
+            let isHovered = false;
+
+            container.addEventListener("mouseenter", () => (isHovered = true));
+            container.addEventListener("mouseleave", () => (isHovered = false));
+
+            function animateOrbit() {
+              if (!isHovered) {
+                cards.forEach((card) => {
+                  let angle = parseFloat(card.getAttribute("data-angle"));
+                  angle = (angle + speed) % 360;
+                  card.setAttribute("data-angle", angle);
+
+                  const radians = (angle * Math.PI) / 180;
+                  // Tính độ lệch X, Y từ tâm
+                  const x = radius * Math.cos(radians);
+                  const y = radius * Math.sin(radians);
+
+                  /* 
+                       CHÌA KHÓA MƯỢT MÀ: 
+                       - Dịch tâm thẻ về chính giữa bằng -50%
+                       - Dùng translate3d (X, Y, 0) thay thế cho Left/Top 
+                       Giúp card chuyển động siêu mịn không bị giật khựng pixel.
+                    */
+                  card.style.transform = `translate3d(calc(-50% + ${x}px), calc(-50% + ${y}px), 0)`;
+                });
+              }
+              requestAnimationFrame(animateOrbit);
+            }
+
+            // Kích hoạt render luồng
+            animateOrbit();
+          </script>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
