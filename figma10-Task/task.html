@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./asset/css/b2.css" />
     <link rel="stylesheet" href="asset\css\card.css" />
     <link rel="stylesheet" href="asset\css\G93.css" />
+    <link rel="stylesheet" href="asset\css\Features.css">
     <link rel="stylesheet" href="asset\css\style_nam.css" />
     <title>Document</title>
   </head>
@@ -187,6 +188,7 @@
       </div>
     <!-- thêm code vô đây -->
     </div>
+ <div id="height_body2_body1"></div> 
     <div id="body2" class="form-page">
       <div class="content-B2">
         <div class="left-cB2">
@@ -288,9 +290,6 @@
     <!-- <div> hoặc vô đây
 
     </div> -->
-    
-    
-
             <!-- Thẻ 4: Design -->
             <div class="card c-design" data-angle="325">
               <div class="card-body">
@@ -301,6 +300,8 @@
               </div>
             </div>
           </div>
+        
+
 
           <!-- TỐI ƯU TOÁN HỌC TRỰC TIẾP TRÊN GPU ĐỂ XOAY MƯỢT TUYỆT ĐỐI -->
           <script>
@@ -345,5 +346,142 @@
         </div>
       </div>
     </div>
+      <!-- code mới của nam  -->
+        <div class="synchronize_form_page"> 
+           <div id="features" class="form_page Flex_row ">
+              <div id="Task_processing_chart">
+                  <div id="all_dash_line" class="Flex_row">
+                      <div class=" box_hr_fetures" >
+                          <div class="hr_fetures  hr_fetures1"></div>                     
+                      </div>
+                      <div class=" box_hr_fetures">
+                          <div class="hr_fetures hr_fetures2"></div>                          
+                      </div>
+                      <div class=" box_hr_fetures">
+                          <div class="hr_fetures hr_fetures3"></div>                         
+                      </div>
+                      <div class=" box_hr_fetures">
+                          <div class="hr_fetures hr_fetures4"></div>                         
+                      </div>
+                  </div>
+                  <div class="Flex_row_a_center am">
+                     <p >9 am</p>
+                     <p >10 am</p>
+                     <p  >11 am</p>
+                     <p  >12 am</p>
+                  </div>
+                    
+
+                 <img class="move_img" id="line1_features" src="asset\image\row_line1 (1).svg" alt="">
+                 <img  class="move_img" id="line2_features" src="asset\image\row_line1 (2).svg" alt="">
+                 <img  class="move_img" id="line3_features" src="asset\image\row_line1 (3).svg" alt="">
+                 <img id="line4_features" src="asset\image\row_line1 (4).svg" alt="">
+                 <img   class="move_img" id="line5_features"src="asset\image\Group 1000003785.svg" alt="">
+                 <script>
+window.onload = function(){
+
+    const imgs = document.querySelectorAll(".move_img");
+
+    const obj = [];
+
+    // trạng thái dừng toàn bộ
+    let pauseAll = false;
+
+    imgs.forEach((img)=>{
+
+        obj.push({
+            y: parseInt(getComputedStyle(img).top) || 0,
+            dy: Math.random() > 0.5 ? 1 : -1
+        });
+
+    });
+
+    const speed = 0.5;
+    const boxHeight = 440;
+
+    function animate(){
+
+        obj.forEach((item,index)=>{
+
+            // dừng toàn bộ khi hover
+            if(pauseAll) return;
+
+            item.y += item.dy * speed;
+
+            const imgHeight = imgs[index].offsetHeight;
+
+            // không vượt khung
+            if(item.y <= 0){
+                item.y = 0;
+                item.dy = 1;
+            }
+
+            if(item.y >= boxHeight - imgHeight){
+                item.y = boxHeight - imgHeight;
+                item.dy = -1;
+            }
+
+            imgs[index].style.top = item.y + "px";
+        });
+
+        requestAnimationFrame(animate);
+    }
+
+    // đưa chuột vào -> dừng tất cả
+    imgs.forEach((img)=>{
+
+        img.addEventListener("mouseenter",()=>{
+
+            pauseAll = true;
+        });
+
+        // đưa chuột ra -> chạy tiếp
+        img.addEventListener("mouseleave",()=>{
+
+            pauseAll = false;
+        });
+
+    });
+
+    animate();
+}
+                 </script>
+              </div>
+              <div id="Text_card_features">
+                 <h1 id="h1_TPC" class="h_40_w ">Features to help your <span>team succeed </span></h1>
+                 <div id="All_text_features">                   
+                      <div class="card_text_features1 card_text_features">
+                        <div class="box_color_feartures bcf1"><img src="asset\image\Vector 10.svg" alt=""></div>
+                        <div class="small_C_T_f">
+                           <h1 class="h_16_w">Choose a view</h1>
+                           <p class="p_14_133 ">Nullam dignssim mauris, dictumst quisque.</p>
+                        </div>
+                      </div>
+                      <div class="card_text_features2 card_text_features">
+                        <div class="box_color_feartures bcf2"><img src="asset\image\Vector 10.svg" alt=""></div>
+                        <div class="small_C_T_f">
+                            <h1 class="h_16_w">Meet your new butler</h1>
+                            <p class="p_14_133 ">Nullam dignssim mauris, dictumst quisque.</p>
+                        </div>
+                      </div>
+                      <div class="card_text_features3 card_text_features">
+                        <div class="box_color_feartures bcf3"><img src="asset\image\Vector 10.svg" alt=""></div>
+                        <div class="small_C_T_f">
+                            <h1 class="h_16_w">Dive into the details</h1>
+                            <p class="p_14_133 ">Nullam dignssim mauris, dictumst quisque.</p>
+                        </div>
+                      </div>
+                      <div class="card_text_features4 card_text_features">
+                        <div class="box_color_feartures bcf4"><img src="asset\image\Vector 10.svg" alt=""></div>
+                        <div class="small_C_T_f">
+                            <h1 class="h_16_w">Power up</h1>
+                            <p class="p_14_133 ">Nullam dignssim mauris, dictumst quisque.</p>
+                        </div>
+                      </div>
+                  </div>                 
+              </div>
+           </div>
+        </div>
+
   </body>
 </html>

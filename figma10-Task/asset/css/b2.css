@@ -3,6 +3,10 @@
   background-color: rgba(19, 21, 23, 1);
   padding-bottom: 140px;
 }
+#height_body2_body1 {
+  height: 140px;
+  background-color: rgba(19, 21, 23, 1);
+}
 .content-B2 {
   width: 82%;
   max-width: 1165px;
@@ -91,8 +95,8 @@
 }
 
 /*  */
-.right-cB2{
-    width: 560px;
+.right-cB2 {
+  width: 560px;
   height: 525px;
 }
 .container {
@@ -217,32 +221,31 @@
 
 /* Màu chữ chính xác từng thẻ theo ảnh mẫu */
 .c-exercitation .text-gradient {
-  background: linear-gradient(89.93deg, #0CCE84 3.45%, #AE8EF9 99.07%);
+  background: linear-gradient(89.93deg, #0cce84 3.45%, #ae8ef9 99.07%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 0%;
   text-align: center;
 }
-.c-online .text-gradient{
-  background: linear-gradient(89.86deg, #EF8F00 -6.27%, #FF7667 90.08%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: 0%;
-  text-align: center;
-
-}
-.c-design .text-gradient{
-  background: linear-gradient(92.64deg, #C4F566 -11.2%, #FF6E6E 123.12%);
+.c-online .text-gradient {
+  background: linear-gradient(89.86deg, #ef8f00 -6.27%, #ff7667 90.08%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 0%;
   text-align: center;
 }
-.c-dtask .text-gradient{
-  background: linear-gradient(92.64deg, #C4F566 -11.2%, #FF6E6E 123.12%);
+.c-design .text-gradient {
+  background: linear-gradient(92.64deg, #c4f566 -11.2%, #ff6e6e 123.12%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.c-dtask .text-gradient {
+  background: linear-gradient(92.64deg, #c4f566 -11.2%, #ff6e6e 123.12%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
