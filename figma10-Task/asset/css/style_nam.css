@@ -16,8 +16,6 @@
   --text-white2: rgba(255, 255, 255, 1);
   --text-white1: rgba(249, 249, 249, 1);
 }
-#Header {
-}
 body {
   font-family: sora;
 }
@@ -26,4 +24,9 @@ body {
 }
 .p_14 {
   color: var(--text-p-14);
+}
+.synchronize_form_page {
+  width: 100%;
+  background-color: rgba(19, 21, 23, 1);
+  height: auto;
 }

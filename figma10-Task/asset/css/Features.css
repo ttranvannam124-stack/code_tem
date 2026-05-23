@@ -1,0 +1,128 @@
+#features {
+  height: 657px;
+  background-color: rgba(25, 27, 29, 1);
+}
+#Task_processing_chart {
+  height: 440px;
+  width: 489px;
+  margin-top: 136px;
+  margin-right: 75px;
+  /* background-color: aqua; */
+  position: relative;
+}
+
+#all_dash_line {
+  width: 294px;
+  height: 378px;
+  margin: 31px 0 0 38px;
+  grid-template: 1fr / repeat(1fr);
+}
+.box_hr_fetures {
+  /* background-color: red; */
+  width: 25%;
+}
+.hr_fetures {
+  height: 100%;
+  width: 0;
+  border: dashed 2px rgba(208, 208, 208, 1);
+}
+.hr_fetures1 {
+  margin-left: 0px;
+}
+.hr_fetures2 {
+  margin-left: 24.5px;
+}
+.hr_fetures3 {
+  margin-left: 49px;
+}
+.hr_fetures4 {
+  margin-left: 100%;
+}
+.am {
+  justify-content: space-between;
+  width: 334px;
+  margin-left: 21px;
+}
+#line1_features {
+  position: absolute;
+  top: 311px;
+  left: 0px;
+}
+#line2_features {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#line3_features {
+  position: absolute;
+  right: 0;
+  top: 203px;
+}
+#line4_features {
+  position: absolute;
+  top: -26px;
+  left: -75px;
+}
+#line5_features {
+  position: absolute;
+  left: 156px;
+  top: 118px;
+}
+#Text_card_features {
+  width: 600px;
+  height: 346px;
+  margin-top: 153px;
+  /* background-color: black; */
+}
+#h1_TPC {
+  width: 399px;
+  height: 100px;
+  text-align: start;
+  margin-bottom: 50px;
+}
+#h1_TPC span {
+  background: linear-gradient(to right, #ffe600, #7cff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#All_text_features {
+  display: grid;
+  grid-template-rows: 87px 87px;
+  grid-template-columns: 242px 256px;
+  gap: 20px;
+  width: 530px;
+  height: 196px;
+}
+.card_text_features {
+  display: flex;
+}
+.box_color_feartures {
+  width: 20px;
+  height: 19px;
+  opacity: 1;
+  border-radius: 7px;
+  position: relative;
+}
+.bcf2 {
+  background-color: rgba(239, 143, 0, 1);
+}
+.bcf1 {
+  background-color: rgba(12, 206, 132, 1);
+}
+.bcf3 {
+  background-color: rgba(174, 143, 249, 1);
+}
+.bcf4 {
+  background-color: rgba(255, 118, 103, 1);
+}
+.box_color_feartures img {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  object-fit: contain;
+}
+.small_C_T_f {
+  width: 176px;
+  height: 51px;
+  margin-left: 23px;
+}
