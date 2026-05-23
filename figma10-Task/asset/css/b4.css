@@ -1,0 +1,434 @@
+#body4 {
+  height: auto;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background-color: rgba(19, 21, 23, 1);
+}
+#body4 h2 {
+  line-height: 50px;
+  justify-self: center;
+  text-align: center;
+  width: 500px;
+}
+.pB4 {
+  text-align: center;
+  width: 750px;
+  justify-self: center;
+  margin: 30px auto 30px auto;
+}
+.list-button {
+  max-width: 920px;
+  height: auto;
+  justify-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.list-button button {
+  background-color: rgba(40, 44, 48, 1);
+  color: rgba(133, 139, 147, 1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 170px;
+  height: 50px;
+  border-radius: 23px;
+  border: none;
+}
+.list-button button img {
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
+}
+.list-button button:hover {
+  background-color: rgb(33, 34, 36);
+  box-shadow: 0 0 3px 2px white;
+}
+
+.content-footerB4 {
+  width: 80%;
+  max-width: 1096px;
+  margin-top: 100px;
+  height: auto;
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 426px 426px 259px; /* Cột sidebar cố định và cột content co giãn */
+  grid-template-rows: 170px 230px;
+  grid-template-areas:
+    "column1 row1 column3"
+    "column1 row2 column3";
+  gap: 15px;
+}
+.column1 {
+  border-radius: 19px;
+  width: 426px;
+  height: 422px;
+  grid-area: column1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-footerB4 h4 {
+  margin-left: 46px;
+  max-width: 231px;
+}
+.dots-cfb4 {
+  margin-right: 46px;
+  margin-bottom: 10px;
+  width: 21px;
+  height: auto;
+  align-self: flex-end;
+}
+.cfo {
+  background-color: rgba(25, 27, 29, 1);
+}
+.buttons-c1-cfo {
+  width: 334px;
+  height: 205px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 40px;
+  gap: 15px;
+}
+.bcfo {
+  background-color: transparent;
+  border: none;
+  width: 334px;
+  height: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 9px;
+  border: 1px solid rgba(40, 43, 46, 1);
+}
+.bcfo p {
+  text-align: start;
+}
+.checkbox-bcfo {
+  display: flex;
+  align-items: center;
+}
+.check {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(49, 53, 57, 1);
+}
+.checkbox-bcfo h5{
+    color: rgb(199, 199, 199);
+}
+.checkbox-bcfo p{
+    margin-top: 10px;
+font-weight: 400;
+font-size: 10px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(145, 150, 158, 1);
+}
+.avatar-group img {
+  clip-path: circle();
+  width: 33px;
+  height: 33px;
+  object-fit: cover;
+  margin-left: -10px;
+}
+.bcfo.avatar-group {
+  margin-right: 0;
+}
+
+.row1 {
+  width: 426px;
+  height: 170px;
+  grid-area: row1;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 19px;
+}
+.content-row1 {
+  margin-left: 20px;
+  width: 301px;
+  height: 105px;
+  margin-top: 28px;
+}
+.row1 .dots-cfb4 {
+  align-self: start;
+  margin-top: 28px;
+}
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+/* Tạo khung hình vuông bo góc lớn phía ngoài (Màu xám khi chưa chọn) */
+.checkbox-box {
+  width: 40px;
+  height: 40px;
+  background-color: #333; /* Màu nền khi chưa bật */
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Tạo ô vuông nhỏ hơn ở bên trong chứa dấu tích */
+.checkbox-inner {
+  width: 20px;
+  height: 20px;
+  background-color: #444; /* Màu ô trong khi chưa bật */
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+/* --- HIỆU ỨNG KHI ĐƯỢC CHECK (BẬT) --- */
+/* Đổi màu khung lớn phía ngoài thành màu xanh sáng */
+.custom-checkbox input[type="checkbox"]:checked + .checkbox-box {
+  background-color: #52e54e;
+}
+/* Đổi màu ô nhỏ bên trong thành màu xanh đậm hơn một chút */
+.custom-checkbox
+  input[type="checkbox"]:checked
+  + .checkbox-box
+  .checkbox-inner {
+  background-color: #27c822;
+}
+/* Đổi dấu tích thành màu trắng */
+.custom-checkbox input[type="checkbox"]:checked + .checkbox-box img {
+  border-color: #ffffff;
+}
+
+/* Cột 2 hàng 2 */
+.row2 {
+  grid-area: row2;
+  width: 426px;
+  height: 230px;
+  border-radius: 19px;
+  display: flex;
+  align-items: center;
+}
+.custom-checkbox h4 {
+  position: relative;
+  left: 17px;
+  top: -35px;
+}
+.hr_p_C_b div {
+  position: absolute;
+  width: 55px;
+  height: 17px;
+  border-radius: 23px;
+  background: rgba(255, 118, 103, 1);
+}
+/* vòng tròn bên trái cột 2 hàng 2 */
+.logo-container {
+  position: relative;
+  width: 215px;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Lớp nền chung cho hai nửa vòng tròn */
+.half-circle {
+  position: absolute;
+  width: 140px;
+  height: 70px;
+}
+/* Nửa vòng tròn phía trên */
+.top {
+  top: 0;
+  border-top-left-radius: 143px;
+  border-top-right-radius: 143px;
+  transform: rotate(45deg);
+  transform-origin: bottom center;
+  background: linear-gradient(
+    97.55deg,
+    #ef8f00 4.54%,
+    #fd7566 51.04%,
+    #6aea5c 120.66%
+  );
+  margin-top: 33px;
+  margin-left: -3px;
+}
+/* Nửa vòng tròn phía dưới */
+.bottom {
+  bottom: 0;
+  border-bottom-left-radius: 143px;
+  border-bottom-right-radius: 143px;
+  background: linear-gradient(
+    97.55deg,
+    #6aea5c 4.54%,
+    #fd7566 51.04%,
+    #ef8f00 120.66%
+  );
+  /* Đảo ngược chiều gradient và xoay đối xứng */
+  transform: rotate(45deg);
+  transform-origin: top center;
+  margin-left: 25px;
+  margin-bottom: 23px;
+}
+/* Vòng tròn đen ở tâm */
+.center-circle {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+/* Ngôi sọc màu xanh ở chính giữa */
+.star {
+  width: 15px;
+  height: 15px;
+  background-color: #66bb6a;
+  /* Tạo hình ngôi sao 5 cánh bằng clip-path */
+  clip-path: polygon(
+    50% 0%,
+    65% 30%,
+    98% 40%,
+    78% 60%,
+    79% 91%,
+    50% 80%,
+    21% 91%,
+    22% 60%,
+    2% 35%,
+    35% 30%
+  );
+}
+.content-r2cfo {
+  width: 214px;
+  height: 178px;
+  margin-right: 5px;
+  align-self: center;
+  position: relative;
+}
+.users-data {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.data-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.label {
+  color: #8c8e97;
+  font-size: 16px;
+  font-weight: 500;
+}
+.count-online {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: rgba(12, 206, 132, 1);
+}
+.count-offline {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: rgba(255, 118, 103, 1);
+}
+/* Thanh gạch nối nằm ngang ở giữa hai cụm số liệu */
+.data-divider {
+  width: 28px;
+  height: 4px;
+  background-color: #00b074;
+  border-radius: 2px;
+  padding-top: -16px; /* Đẩy thanh gạch ngang cân bằng tầm mắt với chữ Label */
+}
+.content-r2cfo .dots-cfb4 {
+  position: absolute;
+  right: -33px;
+}
+
+/* cột 3 */
+
+.column3 {
+  width: 259px;
+  height: 422px;
+  grid-area: column3;
+  border-radius: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-column3 {
+  width: 153px;
+  height: 368px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.head-column3 {
+  display: flex;
+}
+.head-column3 .dots-cfb4 {
+  margin-right: -46px;
+}
+.h4-head-c3 {
+  position: relative;
+  left: -48px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0%;
+  width: 61px;
+}
+.h4-head-c3 .dot-end {
+  width: 3.71px;
+  height: 3.71px;
+  right: -5px;
+  bottom: 3.71px;
+}
+.column3 .avatar {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 10px;
+}
+.column3 h5 {
+  position: relative;
+}
+.card-user {
+  width: 153px;
+  height: 49.5px;
+  display: flex;
+  gap: 9px;
+  border-bottom: 1px solid rgba(37, 40, 43, 1);
+}
+.except {
+  border: none;
+}
+.card-user h5 {
+  align-self: center;
+}
+.card-user .dot-end {
+  width: 6px;
+  height: 6px;
+  background: rgba(35, 209, 42, 1);
+  border: 1px solid rgba(106, 234, 92, 1);
+  left: -15px;
+  bottom: -2px;
+}
+.column3 button {
+  width: 129px;
+  height: 37px;
+  border-radius: 7px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(239, 143, 0, 1);
+  border: none;
+}
+.column3 button:hover {
+  background-color: rgba(221, 165, 81, 1);
+}
